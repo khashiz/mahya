@@ -21,10 +21,9 @@ defined('_JEXEC') or die;
     <?php endif; ?>
 
     <?php if (!empty($this->lead_items)) : ?>
-        <div class="blog-items items-leading <?php echo $this->params->get('blog_class_leading'); ?>">
+        <div class="uk-child-width-1-1 uk-child-width-1-4@s uk-grid-divider homeItems blog-items items-leading <?php echo $this->params->get('blog_class_leading'); ?>" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-small; delay: 250; offset-top: 300;">
             <?php foreach ($this->lead_items as &$item) : ?>
-                <div class="blog-item"
-                    itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+                <div class="uk-flex uk-flex-column uk-flex-left item" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
                         <?php
                         $this->item = & $item;
                         echo $this->loadTemplate('item');

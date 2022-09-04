@@ -84,7 +84,7 @@ $this->setMetaData('viewport', 'width=device-width, initial-scale=1');
         <div class="uk-container">
             <div class="uk-grid-column-medium" data-uk-grid>
                 <div class="uk-width-auto uk-flex uk-flex-middle uk-text-zero uk-hidden@s">
-                    <a href="" class="uk-display-block uk-text-primary offcanvasToggler"><i class="far fa-bars-staggered"></i></a>
+                    <a href="#hamMenu" data-uk-toggle class="uk-display-block uk-text-primary offcanvasToggler"><i class="far fa-bars-staggered"></i></a>
                 </div>
                 <div class="uk-width-auto">
                     <a href="<?php echo JUri::base(); ?>" title="<?php echo $sitename; ?>" class="uk-display-inline-block uk-padding-small uk-padding-remove-horizontal"><img src="<?php echo JUri::base().'images/logo.png'; ?>" width="79" height="70" alt="<?php echo $sitename; ?>"></a>
@@ -95,9 +95,8 @@ $this->setMetaData('viewport', 'width=device-width, initial-scale=1');
                 </div>
                 <jdoc:include type="modules" name="search" style="html5" />
                 <div class="uk-width-expand uk-visible@s">&ensp;</div>
-                <div class="uk-width-auto uk-flex uk-flex-middle uk-visible@s" data-uk-lightbox="animation: scale">
-                    <a href="#" target="_self" data-caption="<?php echo JText::_('MAHYA_LOCATION'); ?>" data-type="iframe" title="<?php echo JText::_('MAHYA_LOCATION'); ?>" class="uk-button uk-button-plain uk-border-pill font locationButton"><i class="far fa-map-marker-alt"></i><span><?php echo JText::_('MAHYA_LOCATION'); ?></span></a>
-<!--                    https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4740.819266853735!2d9.99008871708242!3d53.550454675412404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3f9d24afe84a0263!2sRathaus!5e0!3m2!1sde!2sde!4v1499675200938-->
+                <div class="uk-width-auto uk-flex uk-flex-middle uk-visible@s">
+                    <a href="#mahyaLocation" data-uk-toggle target="_self" data-caption="<?php echo JText::_('MAHYA_LOCATION'); ?>" data-type="iframe" title="<?php echo JText::_('MAHYA_LOCATION'); ?>" class="uk-button uk-button-plain uk-border-pill font locationButton"><i class="far fa-map-marker-alt"></i><span><?php echo JText::_('MAHYA_LOCATION'); ?></span></a>
                 </div>
             </div>
         </div>
@@ -106,9 +105,9 @@ $this->setMetaData('viewport', 'width=device-width, initial-scale=1');
         <div class="uk-container">
             <div class="uk-padding-small uk-hidden@s mobileShortcuts">
                 <div class="uk-child-width-1-3 uk-grid-small uk-grid-divider uk-text-center" data-uk-grid>
-                    <div><a href="" class="uk-text-white uk-flex uk-flex-middle uk-flex-center"><i class="far fa-flip-horizontal fa-phone uk-margin-small-left"></i><span class="uk-text-small font"><?php echo JText::_('CALL_US'); ?></span></a></div>
-                    <div><a href="" class="uk-text-white uk-flex uk-flex-middle uk-flex-center"><i class="far fa-map-marker-alt uk-margin-small-left"></i><span class="uk-text-small font"><?php echo JText::_('OUR_LOCATION'); ?></span></a></div>
-                    <div><a href="" class="uk-text-white uk-flex uk-flex-middle uk-flex-center"><i class="fab fa-whatsapp uk-margin-small-left"></i><span class="uk-text-small font"><?php echo JText::_('WHATSAPP'); ?></span></a></div>
+                    <div><a href="tel:<?php echo $params->get('phone'); ?>" target="_blank" class="uk-text-white uk-flex uk-flex-middle uk-flex-center"><i class="far fa-flip-horizontal fa-phone uk-margin-small-left"></i><span class="uk-text-small font"><?php echo JText::_('CALL_US'); ?></span></a></div>
+                    <div><a href="#mahyaLocation" data-uk-toggle class="uk-text-white uk-flex uk-flex-middle uk-flex-center"><i class="far fa-map-marker-alt uk-margin-small-left"></i><span class="uk-text-small font"><?php echo JText::_('OUR_LOCATION'); ?></span></a></div>
+                    <div><a href="https://wa.me/<?php echo $params->get('mobile'); ?>" target="_blank" class="uk-text-white uk-flex uk-flex-middle uk-flex-center"><i class="fab fa-whatsapp uk-margin-small-left"></i><span class="uk-text-small font"><?php echo JText::_('WHATSAPP'); ?></span></a></div>
                 </div>
             </div>
             <jdoc:include type="modules" name="menu" style="html5" />
@@ -118,25 +117,27 @@ $this->setMetaData('viewport', 'width=device-width, initial-scale=1');
     <?php if ($this->countModules('topout', true)) : ?>
         <jdoc:include type="modules" name="topout" style="html5" />
     <?php endif; ?>
-    <main class="uk-height-large">
-        <?php if ($this->countModules('topin', true)) : ?>
-            <jdoc:include type="modules" name="topin" style="html5" />
-        <?php endif; ?>
-        <div class="<?php echo $pageclass == 'tickets' ? 'uk-container' : ''; ?>">
-            <div class="uk-grid-divider" data-uk-grid>
-                <?php if ($this->countModules('sidestart', true)) : ?>
-                    <aside class="uk-width-1-1 uk-width-1-4@m uk-visible@m">
-                        <div data-uk-sticky="offset: 92; bottom: true;">
-                            <div class="uk-child-width-1-1" data-uk-grid><jdoc:include type="modules" name="sidestart" style="none" /></div>
-                        </div>
-                    </aside>
-                <?php endif; ?>
-                <article class="uk-width-1-1 uk-width-expand@m">
-                    <jdoc:include type="component" />
-                </article>
-                <?php if ($this->countModules('sideend', true)) : ?>
-                    <aside class="uk-width-1-1 uk-width-1-4@s uk-visible@s"><jdoc:include type="modules" name="sideend" style="none" /></aside>
-                <?php endif; ?>
+    <main class="uk-padding uk-padding-remove-horizontal">
+        <div class="uk-container">
+	        <?php if ($this->countModules('topin', true)) : ?>
+                <jdoc:include type="modules" name="topin" style="html5" />
+	        <?php endif; ?>
+            <div class="<?php echo $pageclass == 'tickets' ? 'uk-container' : ''; ?>">
+                <div class="uk-grid-divider" data-uk-grid>
+			        <?php if ($this->countModules('sidestart', true)) : ?>
+                        <aside class="uk-width-1-1 uk-width-1-4@m uk-visible@m">
+                            <div data-uk-sticky="offset: 92; bottom: true;">
+                                <div class="uk-child-width-1-1" data-uk-grid><jdoc:include type="modules" name="sidestart" style="none" /></div>
+                            </div>
+                        </aside>
+			        <?php endif; ?>
+                    <article class="uk-width-1-1 uk-width-expand@m">
+                        <jdoc:include type="component" />
+                    </article>
+			        <?php if ($this->countModules('sideend', true)) : ?>
+                        <aside class="uk-width-1-1 uk-width-1-4@s uk-visible@s"><jdoc:include type="modules" name="sideend" style="none" /></aside>
+			        <?php endif; ?>
+                </div>
             </div>
         </div>
     </main>
@@ -190,15 +191,20 @@ $this->setMetaData('viewport', 'width=device-width, initial-scale=1');
             </div>
         </div>
     </footer>
+    <div id="mahyaLocation" class="uk-flex-top" data-uk-modal>
+        <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4740.819266853735!2d9.99008871708242!3d53.550454675412404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3f9d24afe84a0263!2sRathaus!5e0!3m2!1sde!2sde!4v1499675200938" width="1280" height="720" uk-responsive></iframe>
+        </div>
+    </div>
     <div id="hamMenu" data-uk-offcanvas="overlay: true">
         <div class="uk-offcanvas-bar uk-card uk-card-default uk-padding-remove bgWhite">
             <div class="uk-flex uk-flex-column uk-height-1-1">
                 <div class="uk-width-expand">
-                    <div class="offcanvasTop uk-box-shadow-small uk-position-relative uk-flex-stretch">
+                    <div class="offcanvasTop uk-box-shadow-small uk-position-relative uk-flex-stretch uk-background-primary">
                         <div class="uk-grid-collapse uk-height-1-1" data-uk-grid>
-                            <div class="uk-flex uk-width-1-4 uk-flex uk-flex-center uk-flex-middle"><a onclick="UIkit.offcanvas('#hamMenu').hide();" class="uk-flex uk-flex-center uk-flex-middle uk-height-1-1 uk-width-1-1 uk-margin-remove uk-text-black"><i class="far fa-chevron-<?php echo $this->direction == 'rtl' ? 'right' : 'left'; ?>"></i></a></div>
-                            <div class="logo uk-flex uk-flex-center uk-flex-column uk-width-expand">
-                                <span class="f700 font uk-display-block uk-text-black"><?php echo $sitename; ?></span>
+                            <div class="uk-flex uk-width-1-4 uk-flex uk-flex-center uk-flex-middle"><a onclick="UIkit.offcanvas('#hamMenu').hide();" class="uk-flex uk-flex-center uk-flex-middle uk-height-1-1 uk-width-1-1 uk-margin-remove"><i class="far fa-chevron-right"></i></a></div>
+                            <div class="uk-flex uk-width-expand uk-flex uk-flex-right uk-flex-middle uk-text-white">
+                                <span class="font uk-flex uk-flex-middle uk-text-white uk-text-bold uk-h3 uk-margin-remove"><?php echo $sitename; ?></span>
                             </div>
                         </div>
                     </div>

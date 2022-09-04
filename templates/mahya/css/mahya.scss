@@ -69,6 +69,20 @@
 .font{
   font-family: KalamehWeb, Tahoma, sans-serif;
 }
+
+body{
+  &.uk-offcanvas-container{
+    direction: ltr;
+    .uk-offcanvas,
+    div,
+    header,
+    main,
+    footer{
+      direction: rtl;
+    }
+  }
+}
+
 header{
   .offcanvasToggler{
     i{
@@ -133,6 +147,16 @@ nav{
         }
       }
     }
+    .mobileShortcuts{
+      a{
+        color: #fff;
+        text-decoration: none;
+        &:hover,
+        &:active{
+          color: #fff;
+        }
+      }
+    }
   }
 }
 footer{
@@ -189,17 +213,76 @@ footer{
   }
 }
 
+.treatmentPageHeader{
+  @media(max-width: 639px){
+    margin-top: 20px;
+  }
+}
+.treatmentDescWrapper{
+  margin-bottom: 20px;
+  @media(min-width: 640px){
+    margin-bottom: 40px;
+  }
+}
+.homeItems{
+  &:hover{
+    .item{
+      filter: grayscale(1);
+    }
+  }
+  .item{
+    filter: grayscale(1);
+    @include transition(filter .3s ease-out);
+    &:hover{
+      filter: grayscale(0);
+    }
+  }
+}
+.sliderArrow{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 30px;
+  height: 40px;
+  font-size: 16px;
+  color: $gray900;
+  cursor: pointer;
+  @include transition(all .2s ease-out);
+  &:hover{
+    color: #fff;
+    background-color: $accent;
+  }
+  &.sliderArrowRight{
+    @include box-shadow(-2px 0 5px 0 rgba(0, 0, 0, .1));
+    @include border-radius(5px 0 0 5px);
+    @media(max-width: 639px){
+      right: -15px;
+    }
+  }
+  &.sliderArrowLeft{
+    @include box-shadow(2px 0 5px 0 rgba(0, 0, 0, .1));
+    @include border-radius(0 5px 5px 0);
+    @media(max-width: 639px){
+      left: -15px;
+    }
+  }
+}
+
 //Utilities
-.f500{font-variation-settings: "wght" 500, "dots" 4;}
-.f700{font-variation-settings: "wght" 700, "dots" 4;}
+.f500{font-weight: 500;}
 .ltr{direction: ltr;}
 .uk-text-primary{color: $primary !important;}
 .uk-text-white{color: #fff;}
 .uk-position-z-index-2{z-index: 2;}
 .uk-text-zero{font-size: 0;}
 .uk-text-tiny{font-size: 12px;}
+.uk-text-black{font-weight: 900;}
 .uk-padding-tiny{padding: 5px;}
 .uk-background-primary{background-color: $primary !important;}
+.uk-background-accent{background-color: $accent}
+.uk-background-white{background-color: #fff;}
 .uk-button{
   font-size: 0;
   font-weight: 500;
@@ -230,9 +313,12 @@ footer{
     align-items: center;
   }
   &.uk-button-large{
-    font-size: 16px;
     font-variation-settings: 'wght' 500;
     height: 55px;
+    span{
+      font-size: 16px;
+      @include transform(translateY(0));
+    }
     &.uk-button-icon{
       width: 55px;
     }
@@ -250,6 +336,15 @@ footer{
       background-color: #fff;
       color: $primary;
       border: 1px solid $primary;
+    }
+  }
+  &.uk-button-accent{
+    background-color: $accent;
+    color: #fff;
+    &.uk-button-outline{
+      background-color: #fff;
+      color: $accent;
+      border: 1px solid $accent;
     }
   }
   &.uk-button-disabled{
@@ -324,6 +419,91 @@ footer{
   }
 }
 
+
+.uk-offcanvas{
+  z-index: 9999;
+  &:before{
+    background-color: rgba(0, 0, 0, .5);
+  }
+  div{
+    &.uk-offcanvas-bar{
+      background-color: #fff;
+      a{
+        &.logo{
+          color: #e0e0e0;
+        }
+      }
+      div{
+        &.offcanvasTop{
+          height: 70px;
+          a{
+            color: #fff;
+          }
+          &.active{
+            height: 60px;
+          }
+          .logo{
+            svg{
+              path{
+                fill: $accent;
+                &:first-of-type{
+                  fill: #fff;
+                }
+              }
+              polygon{fill: $accent;}
+              rect{fill: #fff;}
+            }
+          }
+        }
+      }
+      ul{
+        &.uk-nav{
+          >li{
+            > a{
+              font-size: 16px;
+              font-weight: 700;
+              padding: 15px 0;
+              color: $primary;
+              @extend .font;
+            }
+            ul{
+              >li{
+                >a{
+                  font-size: 14px;
+                  font-weight: 500;
+                  display: block;
+                  padding: 0 15px 20px 0;
+                  color: $accent;
+                  @extend .font;
+                }
+              }
+            }
+            &.uk-parent{
+              > a{
+                &:after{
+                  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23666%22%20width%3D%2213%22%20height%3D%221%22%20x%3D%220%22%20y%3D%226%22%20%2F%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23666%22%20width%3D%221%22%20height%3D%2213%22%20x%3D%226%22%20y%3D%220%22%20%2F%3E%0A%3C%2Fsvg%3E");
+                  opacity: .3;
+                }
+              }
+              &.uk-open{
+                > a{
+                  &:after{
+                    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23666%22%20width%3D%2213%22%20height%3D%221%22%20x%3D%220%22%20y%3D%226%22%20%2F%3E%0A%3C%2Fsvg%3E");
+                  }
+                }
+              }
+            }
+            &:not(:first-child){
+              border-top: 1px solid #f0f0f0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
 //UIKit Overrides
 .uk-label{
   margin: 0 0 5px 5px;
@@ -343,23 +523,22 @@ footer{
 }
 .uk-accordion{
   li{
-    border: 1px solid $gray200;
     @include border-radius();
     .uk-accordion-title{
+      background-color: $gray100;
+      color: $gray900;
       padding: 15px;
       font-variation-settings: "wght" 700;
       font-size: 16px;
+      font-weight: 500;
+      @extend .font;
+      @include border-radius(5px);
     }
     .uk-accordion-content{
-      margin: 0;
-      padding: 15px;
-      font-size: 14px;
+      font-size: 16px;
       font-variation-settings: "wght" 500;
-    }
-    &.uk-open{
-      .uk-accordion-title{
-        border-bottom: 1px solid $gray200;
-      }
+      color: $gray700;
+      @extend .font;
     }
   }
 }
