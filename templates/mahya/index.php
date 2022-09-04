@@ -82,7 +82,7 @@ $this->setMetaData('viewport', 'width=device-width, initial-scale=1');
 <body class="<?php echo $option . ' view-' . $view . ($layout ? ' layout-' . $layout : ' no-layout') . ($task ? ' task-' . $task : ' no-task') . ($itemid ? ' itemid-' . $itemid : '') . ($pageclass ? ' ' . $pageclass : '') . ($this->direction == 'rtl' ? ' rtl' : ''); ?> <?php if ($pageclass == 'auth') echo 'uk-height-viewport uk-background-muted'; ?>">
     <header class="uk-background-white">
         <div class="uk-container">
-            <div class="uk-grid-column-medium" data-uk-grid>
+            <div class="uk-grid-column-medium uk-grid-row-collapse" data-uk-grid>
                 <div class="uk-width-auto uk-flex uk-flex-middle uk-text-zero uk-hidden@s">
                     <a href="#hamMenu" data-uk-toggle class="uk-display-block uk-text-primary offcanvasToggler"><i class="far fa-bars-staggered"></i></a>
                 </div>

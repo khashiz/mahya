@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf9a8a07-be5d-4ff0-aa72-29ea3d4d9699" name="Changes" comment="Almost done.">
-      <change afterPath="$PROJECT_DIR$/templates/mahya/favicon.ico" afterDir="false" />
+    <list default="true" id="cf9a8a07-be5d-4ff0-aa72-29ea3d4d9699" name="Changes" comment="Almost done number two.">
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/mod_finder/mahya.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mahya/css/mahya.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mahya/css/mahya.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mahya/css/mahya.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mahya/css/mahya.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mahya/css/mahya.scss" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mahya/css/mahya.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mahya/html/com_content/article/service.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mahya/html/com_content/article/service.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mahya/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mahya/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,18 +40,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "true",
-    "last_opened_file_path": "F:/mahya/templates/mahya/html/mod_menu",
+    "last_opened_file_path": "F:/mahya/templates/mahya/html/mod_finder",
     "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\mahya\templates\mahya\html\mod_finder" />
       <recent name="F:\mahya\templates\mahya\html\mod_menu" />
       <recent name="F:\mahya\modules" />
       <recent name="F:\mahya\templates\mahya\html\mod_articles_news" />
       <recent name="F:\mahya\images\svgs" />
-      <recent name="F:\mahya\images" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -65,7 +64,7 @@
       <updated>1662174732265</updated>
       <workItem from="1662174733505" duration="1844000" />
       <workItem from="1662198588452" duration="19000" />
-      <workItem from="1662205469760" duration="33661000" />
+      <workItem from="1662205469760" duration="36422000" />
     </task>
     <task id="LOCAL-00001" summary="Almost done.">
       <created>1662254037721</created>
@@ -74,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662254037721</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Almost done number two.">
+      <created>1662256773226</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662256773226</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +101,7 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Almost done." />
-    <option name="LAST_COMMIT_MESSAGE" value="Almost done." />
+    <MESSAGE value="Almost done number two." />
+    <option name="LAST_COMMIT_MESSAGE" value="Almost done number two." />
   </component>
 </project>

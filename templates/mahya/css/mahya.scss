@@ -84,6 +84,25 @@ body{
 }
 
 header{
+  .form-search{
+    border: 1px solid $primary;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    input{
+      outline: none;
+      border: none;
+      background: transparent;
+      height: 28px;
+      padding: 0;
+      font-size: 14px;
+      color: $gray900;
+      @extend .font;
+    }
+    @media(max-width: 639px){
+      margin-bottom: 15px !important;
+    }
+  }
   .offcanvasToggler{
     i{
       font-size: 32px;
@@ -212,7 +231,11 @@ footer{
     border-top: 1px solid rgba(255, 255, 255, .2);
   }
 }
-
+.searchWrapper{
+  @media(max-width: 639px){
+    display: none;
+  }
+}
 .treatmentPageHeader{
   @media(max-width: 639px){
     margin-top: 20px;
