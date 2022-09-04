@@ -184,7 +184,7 @@ $this->setMetaData('viewport', 'width=device-width, initial-scale=1');
                     <div class="uk-width-1-1 uk-width-expand@m">
                         <p class="uk-margin-remove uk-text-tiny uk-text-white font"><?php echo JText::sprintf('COPYRIGHT', $sitename); ?></p>
                     </div>
-                    <div class="uk-width-1-1 uk-width-auto@m">
+                    <div class="uk-width-1-1 uk-width-auto@m uk-hidden">
                         <p class="uk-margin-remove uk-text-tiny uk-text-white font"><?php echo JText::sprintf('DEVELOPER', $netparsi); ?></p>
                     </div>
                 </div>

@@ -99,10 +99,10 @@ $isExpired         = !is_null($this->item->publish_down) && $this->item->publish
                 </div>
                 <?php endif; ?>
                 <div itemprop="articleBody" class="font uk-text-secondary com-content-article__body"><?php echo $this->item->introtext; ?></div>
-            <a href="#" data-uk-toggle="target: #more; animation: uk-animation-fade" target="_self" title="<?php echo JText::_('MORE'); ?>" class="uk-button uk-button-plain uk-border-pill uk-margin-bottom font locationButton"><i class="far fa-chevron-circle-down"></i><span><?php echo JText::_('MORE'); ?></span></a>
-            <div class="uk-text-secondary uk-margin-medium-bottom font" id="more" hidden><?php echo $this->item->fulltext; ?></div>
-                <div class="uk-width-1-1 uk-width-2-3@s uk-margin-auto"><a href="#order" data-uk-scroll class="uk-button uk-button-primary uk-button-large uk-width-auto uk-border-pill font"><span><?php echo JText::_('REQUEST_FORM').' '.$this->item->title; ?></span></a></div>
-            </div>
+                <a href="#" data-uk-toggle="target: #more; animation: uk-animation-fade" target="_self" title="<?php echo JText::_('MORE'); ?>" class="uk-button uk-button-plain uk-border-pill uk-margin-bottom font locationButton"><i class="far fa-chevron-circle-down"></i><span><?php echo JText::_('MORE'); ?></span></a>
+                <div class="uk-text-secondary uk-margin-medium-bottom font" id="more" hidden><?php echo $this->item->fulltext; ?></div>
+                    <div class="uk-width-1-1 uk-width-2-3@s uk-margin-auto"><a href="#order" data-uk-scroll="offset: 86;" class="uk-button uk-button-primary uk-button-large uk-width-auto uk-border-pill font"><span><?php echo JText::_('REQUEST_FORM').' '.$this->item->title; ?></span></a></div>
+                </div>
         </div>
         <div class="uk-width-1-4 uk-visible@s"><?php echo JHtml::image('images/1.png', '', 'class="uk-width-1-1"') ?></div>
     </div>
@@ -181,8 +181,12 @@ $isExpired         = !is_null($this->item->publish_down) && $this->item->publish
         <div>
             <div class="uk-border-rounded uk-box-shadow-small uk-overflow-hidden">
                 <h4 class="uk-padding-small uk-text-white uk-background-primary uk-text-center uk-margin-remove font f500"><?php echo JText::_('REQUEST_FORM').' '.$this->item->title; ?></h4>
-                <div></div>
+                <div class="uk-padding"><?php echo JHtml::_('content.prepare', '{loadposition requestform}') ?></div>
             </div>
         </div>
     </div>
 </section>
+
+
+
+
