@@ -82,7 +82,14 @@ body{
     }
   }
 }
-
+.logoColor{
+  #accent{fill: $accent;}
+  #primary{fill: $primary;}
+}
+.logoWhite{
+  #accent,
+  #primary{fill: #fff;}
+}
 header{
   .form-search{
     border: 1px solid $primary;
@@ -261,6 +268,14 @@ footer{
     }
   }
 }
+.socials{
+  a{
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
 .sliderArrow{
   background-color: #fff;
   display: flex;
@@ -300,6 +315,7 @@ fieldset{
 
 //Utilities
 .f500{font-weight: 500;}
+.f700{font-weight: 700;}
 .ltr{direction: ltr;}
 .uk-text-primary{color: $primary !important;}
 .uk-text-white{color: #fff;}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="fe733291-703f-4868-adb6-bd3c3a9c4653" name="Mahya Clinic" url="https://mahyaclinicpsy.com">
+        <fileTransfer rootFolder="/public_html" host="mahyaclinicpsy.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

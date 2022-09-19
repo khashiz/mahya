@@ -1,12 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf9a8a07-be5d-4ff0-aa72-29ea3d4d9699" name="Changes" comment="Almost done number two.">
-      <change afterPath="$PROJECT_DIR$/templates/mahya/html/mod_finder/mahya.php" afterDir="false" />
+    <list default="true" id="9178b3ce-c841-485d-b875-105762f6ba75" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/slideshow/slide_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/svgs/family.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/svgs/kids.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/svgs/organization.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/svgs/persoanl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/svgs/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/svgs/sprite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/com_content/article/team.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/com_content/article/team.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/com_content/article/team_links.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/com_content/category/contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/com_content/category/contact.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/com_content/category/contact_children.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/com_content/category/contact_item.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/com_content/category/contact_links.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/com_finder/search/default.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/com_finder/search/default_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/com_finder/search/default_result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/com_finder/search/default_results.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/com_rsform/rsform/default.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/content/team_readmore.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/calendar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/checkbox.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/checkboxes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/color/advanced.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/color/simple.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/color/slider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/combo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/contenthistory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/email.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/file.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/groupedlist-fancy-select.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/groupedlist.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/hidden.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/list-fancy-select.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/media.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/media/accessiblemedia.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/meter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/moduleorder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/number.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/password.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/radio/buttons.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/radio/switcher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/radiobasic.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/range.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/rules.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/subform/default.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/subform/repeatable-table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/subform/repeatable-table/section-byfieldsets.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/subform/repeatable-table/section.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/subform/repeatable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/subform/repeatable/section-byfieldsets.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/subform/repeatable/section.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/tag.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/tel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/text.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/textarea.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/time.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/url.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/field/user.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/renderfield.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/layouts/joomla/form/renderlabel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mahya/html/plg_fields_url/url.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mahya/css/mahya.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mahya/css/mahya.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mahya/css/mahya.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mahya/css/mahya.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mahya/css/mahya.scss" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mahya/css/mahya.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mahya/html/com_content/category/team_item.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mahya/html/com_content/category/team_item.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mahya/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mahya/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +98,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2EExq7w9dfcq6XQ16zRLFvoZl7N" />
+  <component name="ProjectId" id="2EIuzWhLipaCTWBa2mobiMsWTIR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,47 +108,39 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "true",
-    "last_opened_file_path": "F:/mahya/templates/mahya/html/mod_finder",
+    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
+    "WebServerToolWindowPanel.toolwindow.show.date": "false",
+    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
+    "WebServerToolWindowPanel.toolwindow.show.size": "false",
+    "last_opened_file_path": "F:/mahya/templates/mahya/html/com_content/category",
     "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\mahya\templates\mahya\html\mod_finder" />
-      <recent name="F:\mahya\templates\mahya\html\mod_menu" />
-      <recent name="F:\mahya\modules" />
-      <recent name="F:\mahya\templates\mahya\html\mod_articles_news" />
+      <recent name="F:\mahya\templates\mahya\html\com_content\category" />
+      <recent name="F:\mahya\templates\mahya\html\layouts\joomla\content" />
+      <recent name="F:\mahya\templates\mahya\html\com_content\article" />
       <recent name="F:\mahya\images\svgs" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cf9a8a07-be5d-4ff0-aa72-29ea3d4d9699" name="Changes" comment="" />
-      <created>1662174732265</created>
+      <changelist id="9178b3ce-c841-485d-b875-105762f6ba75" name="Changes" comment="" />
+      <created>1662295681580</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1662174732265</updated>
-      <workItem from="1662174733505" duration="1844000" />
-      <workItem from="1662198588452" duration="19000" />
-      <workItem from="1662205469760" duration="36422000" />
+      <updated>1662295681580</updated>
+      <workItem from="1662295682854" duration="1678000" />
+      <workItem from="1662425833325" duration="1898000" />
+      <workItem from="1662477895502" duration="653000" />
+      <workItem from="1663480605907" duration="737000" />
+      <workItem from="1663519183075" duration="607000" />
+      <workItem from="1663538838086" duration="14526000" />
     </task>
-    <task id="LOCAL-00001" summary="Almost done.">
-      <created>1662254037721</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1662254037721</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Almost done number two.">
-      <created>1662256773226</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1662256773226</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,8 +160,5 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Almost done." />
-    <MESSAGE value="Almost done number two." />
-    <option name="LAST_COMMIT_MESSAGE" value="Almost done number two." />
   </component>
 </project>

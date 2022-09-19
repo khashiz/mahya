@@ -87,11 +87,11 @@ $this->setMetaData('viewport', 'width=device-width, initial-scale=1');
                     <a href="#hamMenu" data-uk-toggle class="uk-display-block uk-text-primary offcanvasToggler"><i class="far fa-bars-staggered"></i></a>
                 </div>
                 <div class="uk-width-auto">
-                    <a href="<?php echo JUri::base(); ?>" title="<?php echo $sitename; ?>" class="uk-display-inline-block uk-padding-small uk-padding-remove-horizontal"><img src="<?php echo JUri::base().'images/logo.png'; ?>" width="79" height="70" alt="<?php echo $sitename; ?>"></a>
+                    <a href="<?php echo JUri::base(); ?>" title="<?php echo $sitename; ?>" class="uk-display-inline-block uk-padding-small uk-padding-remove-horizontal logoColor"><img src="<?php echo JUri::base().'images/svgs/sprite.svg#logo'; ?>" width="80" height="70" alt="<?php echo $sitename; ?>" data-uk-svg></a>
                 </div>
                 <div class="uk-width-expand uk-hidden@s">&ensp;</div>
                 <div class="uk-width-auto uk-flex uk-flex-middle">
-                    <a href="#" title="" target="" class="uk-button uk-button-primary uk-button-outline uk-border-pill uk-box-shadow-small font"><span><?php echo JText::_('ONLINE_RESERVE'); ?></span></a>
+                    <a href="<?php echo JUri::base().'reserve'; ?>" title="" target="" class="uk-button uk-button-primary uk-button-outline uk-border-pill uk-box-shadow-small font"><span><?php echo JText::_('ONLINE_RESERVE'); ?></span></a>
                 </div>
                 <jdoc:include type="modules" name="search" style="html5" />
                 <div class="uk-width-expand uk-visible@s">&ensp;</div>
@@ -152,7 +152,9 @@ $this->setMetaData('viewport', 'width=device-width, initial-scale=1');
             <div class="uk-container">
                 <div class="uk-flex-between uk-grid-column-large uk-grid-row-small" data-uk-grid>
                     <div class="uk-width-1-1 uk-width-1-3@s contact">
-                        <div class="uk-margin-bottom uk-text-center uk-text-right@s"><?php echo JHtml::image('images/logo-white.png', $sitename, 'width="" height=""'); ?></div>
+                        <div class="uk-margin-bottom uk-text-center uk-text-right@s">
+                            <a href="<?php echo JUri::base(); ?>" title="<?php echo $sitename; ?>" class="uk-display-inline-block logoWhite"><img src="<?php echo JUri::base().'images/svgs/sprite.svg#logo'; ?>" width="80" height="70" alt="<?php echo $sitename; ?>" data-uk-svg></a>
+                        </div>
                         <ul class="uk-grid-small uk-visible@s" data-uk-grid>
                             <li class="uk-text-small uk-flex uk-flex-middle uk-width-1-1"><i class="fal fa-map-signs fa-fw fa-lg uk-margin-left uk-text-white"></i><a href="#" class="uk-text-white font f500"><?php echo $params->get('address'); ?></a></li>
                             <li class="uk-text-small uk-flex uk-flex-middle uk-width-1-2 uk-width-1-1@m"><i class="fal fa-phone fa-flip-horizontal fa-fw fa-lg uk-margin-left uk-text-white"></i><a href="tel:<?php echo $params->get('phone'); ?>" class="uk-text-white font f500 ltr"><?php echo $params->get('phone'); ?></a></li>
@@ -193,7 +195,7 @@ $this->setMetaData('viewport', 'width=device-width, initial-scale=1');
     </footer>
     <div id="mahyaLocation" class="uk-flex-top" data-uk-modal>
         <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4740.819266853735!2d9.99008871708242!3d53.550454675412404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3f9d24afe84a0263!2sRathaus!5e0!3m2!1sde!2sde!4v1499675200938" width="1280" height="720" uk-responsive></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1617.8537359170602!2d51.40547965821719!3d35.80711417029018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x66d10737d1f5457!2zMzXCsDQ4JzI1LjYiTiA1McKwMjQnMjMuNyJF!5e0!3m2!1sen!2s!4v1662427888107!5m2!1sen!2s" width="1280" height="720" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-uk-responsive></iframe>
         </div>
     </div>
     <div id="hamMenu" data-uk-offcanvas="overlay: true">
