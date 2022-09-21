@@ -39,7 +39,6 @@ $isUnpublished = ($this->item->state == ContentComponent::CONDITION_UNPUBLISHED 
     <?php endif; ?>
 
     <?php echo LayoutHelper::render('joomla.content.list_item_title_mag', $this->item); ?>
-            <div class="uk-text-muted font uk-margin-bottom uk-h5 uk-margin-remove-top">دکترای روانشناسی</div>
 
     <?php if ($canEdit) : ?>
         <?php echo LayoutHelper::render('joomla.content.icons', array('params' => $params, 'item' => $this->item)); ?>

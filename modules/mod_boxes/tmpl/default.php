@@ -42,7 +42,7 @@ if ($params->get('backgroundimage'))
                                                         <h5 class="font uk-text-black uk-h2 uk-margin-remove uk-text-center uk-text-right@s uk-text-<?php echo $item->background == 'primary' ? 'white' : 'primary'; ?>"><?php echo $item->title; ?></h5>
                                                         <span class="uk-text-small font uk-text-white"><?php echo $item->subtitle; ?></span>
                                                         <div class="uk-margin-top uk-width-1-1 uk-width-1-2@s">
-                                                            <a href="" class="uk-button uk-button-<?php echo $item->background == 'primary' ? 'default' : 'primary'; ?> uk-border-pill uk-button-small font"><span><?php echo $item->btn_label; ?></span></a>
+                                                            <a href="<?php echo JRoute::_("index.php?Itemid={$item->link}"); ?>" class="uk-button uk-button-<?php echo $item->background == 'primary' ? 'default' : 'primary'; ?> uk-border-pill uk-button-small font"><span><?php echo $item->btn_label; ?></span></a>
                                                         </div>
                                                     </div>
                                                 </div>
